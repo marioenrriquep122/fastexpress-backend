@@ -1,0 +1,46 @@
+[project]
+name = "fastexpress-backend"
+version = "1.0.0"
+description = "Módulo de Cotización de Envíos y Descuentos FastExpress"
+requires-python = ">=3.11"
+
+# ---------------------------------------------------------------------------
+# Pruebas
+# ---------------------------------------------------------------------------
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.testing"
+python_files = ["test_*.py"]
+testpaths = ["tests"]
+addopts = "-v --cov=principal --cov-branch --cov-report=term-missing --cov-report=html --cov-report=xml"
+markers = [
+    "caja_blanca: caminos independientes del CFG",
+    "caja_negra: particiones de equivalencia, BVA y tabla de decision",
+    "api: integracion de los endpoints REST",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["principal"]
+omit = ["*/migrations/*"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+# ---------------------------------------------------------------------------
+# Linter / formateador (ruff): estilo uniforme en todo el equipo
+# ---------------------------------------------------------------------------
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["*/migrations/*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "DJ"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["config", "principal"]

@@ -1,0 +1,40 @@
+# Integración continua: en cada push o Pull Request GitHub revisa el estilo
+# del código, las migraciones y corre las pruebas (falla si cobertura < 85 %).
+name: Calidad - lint, pruebas y cobertura
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    env:
+      DJANGO_SETTINGS_MODULE: config.settings.testing
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements/dev.txt
+
+      - name: Revisar estilo de código (ruff)
+        run: ruff check .
+
+      - name: Verificar migraciones pendientes
+        run: python manage.py makemigrations --check --dry-run
+
+      - name: Ejecutar pruebas con cobertura
+        run: pytest
+
+      - name: Publicar reporte de cobertura
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-cobertura
+          path: htmlcov/

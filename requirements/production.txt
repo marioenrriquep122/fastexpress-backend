@@ -1,0 +1,4 @@
+# Servidor real
+-r base.txt
+gunicorn>=22.0
+psycopg[binary]>=3.2
