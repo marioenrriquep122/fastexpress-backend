@@ -35,8 +35,25 @@ class CotizacionEntradaSerializer(serializers.Serializer):
 
 
 class CotizacionFiltroSerializer(serializers.Serializer):
-    """Valida los filtros del listado (?tipo_cliente=VIP&tipo_envio=EXPRESS)."""
+    """
+    Valida los query params del listado GET /cotizaciones/.
 
+    Paginación (DRF, no en este serializer): ?page=1&page_size=20 (máx. 100).
+    """
+
+    id = serializers.IntegerField(label="ID de cotización", min_value=1, required=False)
+    peso_kg = serializers.DecimalField(
+        label="Peso (kg)",
+        max_digits=8,
+        decimal_places=2,
+        required=False,
+        help_text="Coincidencia exacta (ej. 10.00).",
+    )
+    creado_en = serializers.DateField(
+        label="Fecha de creación",
+        required=False,
+        help_text="Día calendario ISO (YYYY-MM-DD); filtra cotizaciones creadas ese día.",
+    )
     tipo_cliente = serializers.ChoiceField(label="Tipo de cliente", choices=TipoCliente.choices, required=False)
     tipo_envio = serializers.ChoiceField(label="Tipo de envío", choices=TipoEnvio.choices, required=False)
 

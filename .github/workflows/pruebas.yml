@@ -30,7 +30,9 @@ jobs:
         run: python manage.py makemigrations --check --dry-run
 
       - name: Ejecutar pruebas con cobertura
-        run: pytest
+        run: >
+          pytest --cov=principal --cov-branch
+          --cov-report=term-missing --cov-report=html --cov-report=xml
 
       - name: Publicar reporte de cobertura
         if: always()

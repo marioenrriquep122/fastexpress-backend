@@ -45,6 +45,10 @@ def test_listar_cotizaciones_con_filtros():
     assert services.listar_cotizaciones(tipo_envio="EXPRESS").count() == 1
     assert services.listar_cotizaciones(tipo_cliente="VIP", tipo_envio="ESTANDAR").count() == 1
 
+    vip = services.listar_cotizaciones(tipo_cliente="VIP").first()
+    assert services.listar_cotizaciones(pk=vip.pk).count() == 1
+    assert services.listar_cotizaciones(peso_kg=Decimal("1.00")).count() == 3
+
 
 def _datos_base(**cambios):
     datos = dict(

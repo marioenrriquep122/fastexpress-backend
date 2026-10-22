@@ -1,0 +1,137 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\danna\Videos\pruebas-cajabw\fastexpress-backend\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+django: version: 5.2.18, settings: config.settings.testing (from ini)
+rootdir: C:\Users\danna\Videos\pruebas-cajabw\fastexpress-backend
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, django-4.14.0
+collecting ... collected 79 items
+
+tests/integration/core/test_core.py::test_health_check PASSED            [  1%]
+tests/integration/core/test_core.py::test_comando_cargar_datos_demo PASSED [  2%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_calcular_devuelve_desglose_y_no_guarda PASSED [  3%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_guarda_en_base_de_datos PASSED [  5%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[0.00-400-PESO_INVALIDO] PASSED [  6%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[-1.00-400-PESO_INVALIDO] PASSED [  7%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[20.01-422-LIMITE_EXCEDIDO] PASSED [  8%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[100.00-422-LIMITE_EXCEDIDO] PASSED [ 10%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload0-peso_kg] PASSED [ 11%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload1-peso_kg] PASSED [ 12%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload2-tipo_cliente] PASSED [ 13%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload3-tipo_envio] PASSED [ 15%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload4-peso_kg] PASSED [ 16%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload5-tipo_cliente] PASSED [ 17%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload6-tipo_envio] PASSED [ 18%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_cotizaciones_paginado_y_ordenado PASSED [ 20%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_con_filtros PASSED [ 21%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_con_filtro_invalido_devuelve_400 PASSED [ 22%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_respeta_page_size PASSED [ 24%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_calcular_no_tiene_id_ni_fecha PASSED [ 25%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_detalle_de_cotizacion PASSED [ 26%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_detalle_inexistente_devuelve_404_con_formato_estandar PASSED [ 27%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_put_reemplaza_datos_y_recalcula PASSED [ 29%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_patch_cambia_solo_campos_enviados_y_recalcula PASSED [ 30%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_put_incompleto_devuelve_400 PASSED [ 31%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_delete_existente_devuelve_204_y_luego_404 PASSED [ 32%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_delete_inexistente_devuelve_404 PASSED [ 34%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_delete_lista_sin_id_devuelve_405 PASSED [ 35%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_tarifas_expone_reglas_vigentes PASSED [ 36%]
+tests/integration/cotizaciones/test_cotizacion_api.py::test_esquema_openapi_disponible PASSED [ 37%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_registrar_cotizacion_persiste_desglose_completo PASSED [ 39%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_registrar_cotizacion_invalida_no_deja_registro PASSED [ 40%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_simular_cotizacion_devuelve_instancia_sin_guardar PASSED [ 41%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_listar_cotizaciones_con_filtros PASSED [ 43%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio0] PASSED [ 44%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio1] PASSED [ 45%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio2] PASSED [ 46%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio3] PASSED [ 48%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio4] PASSED [ 49%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_signal_registra_en_log_al_emitir_cotizacion PASSED [ 50%]
+tests/integration/cotizaciones/test_cotizacion_service.py::test_signal_no_registra_al_actualizar PASSED [ 51%]
+tests/integration/core/test_core.py::test_permission_denied_de_django_sale_con_formato_estandar PASSED [ 53%]
+tests/integration/core/test_core.py::test_error_inesperado_no_se_oculta PASSED [ 54%]
+tests/integration/core/test_core.py::test_admin_de_cotizaciones_es_solo_lectura PASSED [ 55%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C1_peso_cero_o_negativo_es_rechazado PASSED [ 56%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C2_peso_mayor_a_20_es_rechazado PASSED [ 58%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C3_camino_base_ligero_nuevo_estandar PASSED [ 59%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C4_tramo_pesado PASSED [ 60%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C5_cliente_frecuente PASSED [ 62%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C6_cliente_vip PASSED [ 63%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C7_tipo_cliente_invalido PASSED [ 64%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C8_envio_express PASSED [ 65%]
+tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C9_tipo_envio_invalido PASSED [ 67%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_validas_peso[PE-02 tramo ligero (0.01-5.00)-3.00-11.00] PASSED [ 68%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_validas_peso[PE-03 tramo pesado (5.01-20.00)-12.00-53.00] PASSED [ 69%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_invalidas_peso[PE-01 peso negativo--3.00-PesoInvalidoError] PASSED [ 70%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_invalidas_peso[PE-04 peso mayor a 20-35.00-LimiteExcedidoError] PASSED [ 72%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-02 minimo-0.01-2.00-5.02] PASSED [ 73%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-03 minimo+-0.02-2.00-5.04] PASSED [ 74%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-04 limite ligero--4.99-2.00-14.98] PASSED [ 75%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-05 limite ligero-5.00-2.00-15.00] PASSED [ 77%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-06 limite pesado-5.01-4.00-25.04] PASSED [ 78%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-07 limite pesado+-5.02-4.00-25.08] PASSED [ 79%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-08 maximo--19.99-4.00-84.96] PASSED [ 81%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-09 maximo-20.00-4.00-85.00] PASSED [ 82%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_01_peso_cero_invalido PASSED [ 83%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_10_peso_justo_sobre_el_maximo_rechazado PASSED [ 84%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_monto_minimo_posible PASSED [ 86%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_monto_maximo_posible PASSED [ 87%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_monto_nunca_es_negativo_ni_cero PASSED [ 88%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-01-NUEVO-ESTANDAR-0.00-0.00-45.00] PASSED [ 89%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-02-NUEVO-EXPRESS-0.00-11.25-56.25] PASSED [ 91%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-03-FRECUENTE-ESTANDAR-4.50-0.00-40.50] PASSED [ 92%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-04-FRECUENTE-EXPRESS-4.50-11.25-51.75] PASSED [ 93%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-05-VIP-ESTANDAR-9.00-0.00-36.00] PASSED [ 94%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-06-VIP-EXPRESS-9.00-11.25-47.25] PASSED [ 96%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_redondeo_half_up PASSED [ 97%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_redondeo_en_descuento_con_tres_decimales PASSED [ 98%]
+tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_acepta_peso_como_string_o_entero PASSED [100%]
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.10.11-final-0 _______________
+
+Name                                                                   Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------------------------------------
+principal\__init__.py                                                      0      0      0      0   100%
+principal\admin\__init__.py                                                1      0      0      0   100%
+principal\admin\cotizacion_admin.py                                       11      0      0      0   100%
+principal\apps.py                                                          7      0      0      0   100%
+principal\constantes\__init__.py                                           0      0      0      0   100%
+principal\constantes\cotizacion.py                                        21      0      0      0   100%
+principal\core\__init__.py                                                 0      0      0      0   100%
+principal\core\exceptions\__init__.py                                      0      0      0      0   100%
+principal\core\exceptions\base.py                                          6      0      0      0   100%
+principal\core\exceptions\handler.py                                      26      0     10      0   100%
+principal\core\pagination.py                                               5      0      0      0   100%
+principal\core\serializers.py                                              4      0      0      0   100%
+principal\core\views.py                                                   10      0      0      0   100%
+principal\management\__init__.py                                           0      0      0      0   100%
+principal\management\commands\__init__.py                                  0      0      0      0   100%
+principal\management\commands\cargar_datos_demo.py                        17      0      4      0   100%
+principal\modelos\__init__.py                                              2      0      0      0   100%
+principal\modelos\base.py                                                  6      0      0      0   100%
+principal\modelos\cotizacion.py                                           26      0      0      0   100%
+principal\models.py                                                        1      0      0      0   100%
+principal\modulos\__init__.py                                              0      0      0      0   100%
+principal\modulos\cotizaciones\__init__.py                                 0      0      0      0   100%
+principal\modulos\cotizaciones\exceptions.py                              13      0      0      0   100%
+principal\modulos\cotizaciones\serializers\__init__.py                     0      0      0      0   100%
+principal\modulos\cotizaciones\serializers\cotizacion_serializers.py      15      0      0      0   100%
+principal\modulos\cotizaciones\services\__init__.py                        0      0      0      0   100%
+principal\modulos\cotizaciones\services\calculadora_service.py            32      0     16      0   100%
+principal\modulos\cotizaciones\services\cotizacion_service.py             23      0      6      0   100%
+principal\modulos\cotizaciones\services\tarifa_service.py                  3      0      0      0   100%
+principal\modulos\cotizaciones\signals\__init__.py                         0      0      0      0   100%
+principal\modulos\cotizaciones\signals\cotizacion_signals.py               9      0      2      0   100%
+principal\modulos\cotizaciones\urls.py                                     7      0      0      0   100%
+principal\modulos\cotizaciones\views\__init__.py                           0      0      0      0   100%
+principal\modulos\cotizaciones\views\cotizacion_views.py                  52      0      2      0   100%
+principal\modulos\cotizaciones\views\tarifa_views.py                       8      0      0      0   100%
+principal\urls.py                                                          3      0      0      0   100%
+------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                    308      0     40      0   100%
+Coverage HTML written to dir htmlcov
+Coverage XML written to file coverage.xml
+Required test coverage of 85.0% reached. Total coverage: 100.00%
+============================= 79 passed in 1.75s ==============================

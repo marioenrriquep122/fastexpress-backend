@@ -15,7 +15,7 @@ Fórmula (interpretación acordada por el equipo, ver README):
     total     = subtotal - descuento + recargo
 """
 
-from decimal import ROUND_HALF_UP, Decimal
+from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 
 from principal.constantes.cotizacion import (
     CENTAVO,
@@ -24,6 +24,7 @@ from principal.constantes.cotizacion import (
     DESCUENTO_NUEVO,
     DESCUENTO_VIP,
     LIMITE_TRAMO_LIGERO_KG,
+    PESO_MINIMO_KG,
     PESO_MAXIMO_KG,
     RECARGO_ESTANDAR,
     RECARGO_EXPRESS,
@@ -50,15 +51,21 @@ def calcular_cotizacion(peso, tipo_cliente: str, tipo_envio: str) -> dict:
     Aplica BR-01 a BR-04 y devuelve el desglose de la cotización.
 
     Raises:
-        PesoInvalidoError: peso <= 0
+        PesoInvalidoError: peso no numérico, <= 0 o por debajo del mínimo (0.01 kg)
         LimiteExcedidoError: peso > 20.00 kg
         TipoClienteInvalidoError / TipoEnvioInvalidoError: tipo desconocido
     """
-    peso = Decimal(str(peso))
+    try:
+        peso = Decimal(str(peso))
+    except InvalidOperation as exc:
+        raise PesoInvalidoError("El peso debe ser un número válido.") from exc
 
     # ---- BR-02: validación y tramo de peso --------------------------------
-    if peso <= 0:                                                     # [N1] D1
+    if not peso.is_finite() or peso <= 0:                             # [N1] D1
         raise PesoInvalidoError("El peso debe ser mayor a 0 kg.")    # [N2]
+
+    if peso < PESO_MINIMO_KG:
+        raise PesoInvalidoError(f"El peso mínimo permitido es {PESO_MINIMO_KG} kg.")
 
     if peso > PESO_MAXIMO_KG:                                         # [N3] D2
         raise LimiteExcedidoError(                                    # [N4]

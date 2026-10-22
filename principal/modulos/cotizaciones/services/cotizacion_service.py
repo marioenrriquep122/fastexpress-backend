@@ -9,6 +9,7 @@ lanza ErrorNegocio si algo viola una regla) y guardan DESPUÉS, así que una
 petición rechazada nunca deja datos a medias en la base de datos.
 """
 
+from datetime import date
 from decimal import Decimal
 
 from django.db.models import QuerySet
@@ -51,9 +52,22 @@ def eliminar_cotizacion(cotizacion: Cotizacion) -> None:
     cotizacion.delete()
 
 
-def listar_cotizaciones(tipo_cliente: str | None = None, tipo_envio: str | None = None) -> QuerySet:
-    """Consulta de cotizaciones con filtros opcionales."""
+def listar_cotizaciones(
+    *,
+    pk: int | None = None,
+    peso_kg: Decimal | None = None,
+    creado_en: date | None = None,
+    tipo_cliente: str | None = None,
+    tipo_envio: str | None = None,
+) -> QuerySet:
+    """Consulta de cotizaciones con filtros opcionales (se combinan con AND)."""
     queryset = Cotizacion.objects.all()
+    if pk is not None:
+        queryset = queryset.filter(pk=pk)
+    if peso_kg is not None:
+        queryset = queryset.filter(peso_kg=peso_kg)
+    if creado_en is not None:
+        queryset = queryset.filter(creado_en__date=creado_en)
     if tipo_cliente:
         queryset = queryset.filter(tipo_cliente=tipo_cliente)
     if tipo_envio:

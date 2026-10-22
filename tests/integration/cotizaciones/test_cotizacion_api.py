@@ -116,6 +116,45 @@ def test_listar_con_filtro_invalido_devuelve_400(api_client):
     assert resp.data["codigo"] == "DATOS_INVALIDOS"
 
 
+def test_listar_con_filtro_por_id(api_client, payload_valido):
+    creada = api_client.post(URL_LISTA, payload_valido, format="json").data
+    api_client.post(URL_LISTA, {**payload_valido, "tipo_cliente": "VIP"}, format="json")
+
+    resp = api_client.get(URL_LISTA, {"id": creada["id"]})
+
+    assert resp.status_code == 200
+    assert resp.data["count"] == 1
+    assert resp.data["results"][0]["id"] == creada["id"]
+
+
+def test_listar_con_filtro_por_peso_kg(api_client, payload_valido):
+    api_client.post(URL_LISTA, payload_valido, format="json")
+    api_client.post(URL_LISTA, {**payload_valido, "peso_kg": "2.00"}, format="json")
+
+    resp = api_client.get(URL_LISTA, {"peso_kg": "2.00"})
+
+    assert resp.status_code == 200
+    assert resp.data["count"] == 1
+    assert resp.data["results"][0]["peso_kg"] == "2.00"
+
+
+def test_listar_con_filtro_por_creado_en(api_client, payload_valido):
+    creada = api_client.post(URL_LISTA, payload_valido, format="json").data
+    fecha = creada["creado_en"][:10]
+
+    resp = api_client.get(URL_LISTA, {"creado_en": fecha})
+
+    assert resp.status_code == 200
+    assert resp.data["count"] >= 1
+    assert all(r["creado_en"].startswith(fecha) for r in resp.data["results"])
+
+
+def test_listar_filtro_id_invalido_devuelve_400(api_client):
+    resp = api_client.get(URL_LISTA, {"id": "abc"})
+    assert resp.status_code == 400
+    assert resp.data["codigo"] == "DATOS_INVALIDOS"
+
+
 def test_listar_respeta_page_size(api_client, payload_valido):
     for _ in range(3):
         api_client.post(URL_LISTA, payload_valido, format="json")
@@ -143,11 +182,58 @@ def test_detalle_inexistente_devuelve_404_con_formato_estandar(api_client):
     assert resp.data["codigo"] == "NOT_FOUND"
 
 
-def test_no_se_permite_modificar_ni_borrar(api_client, payload_valido):
+def test_put_reemplaza_datos_y_recalcula(api_client, payload_valido):
+    """API-CN-PUT-01: PUT con los 3 campos devuelve 200 y desglose recalculado."""
     creada = api_client.post(URL_LISTA, payload_valido, format="json").data
     url = reverse("cotizacion-detail", args=[creada["id"]])
-    assert api_client.put(url, payload_valido, format="json").status_code == 405
-    assert api_client.delete(url).status_code == 405
+    nuevo = {"peso_kg": "2.00", "tipo_cliente": "VIP", "tipo_envio": "ESTANDAR"}
+    resp = api_client.put(url, nuevo, format="json")
+    assert resp.status_code == 200
+    assert resp.data["total"] == "7.20"
+    assert Cotizacion.objects.get(pk=creada["id"]).total == Decimal("7.20")
+
+
+def test_patch_cambia_solo_campos_enviados_y_recalcula(api_client, payload_valido):
+    """API-CN-PATCH-01: PATCH parcial conserva el resto y recalcula."""
+    creada = api_client.post(URL_LISTA, payload_valido, format="json").data
+    url = reverse("cotizacion-detail", args=[creada["id"]])
+    resp = api_client.patch(url, {"tipo_envio": "ESTANDAR"}, format="json")
+    assert resp.status_code == 200
+    assert resp.data["total"] == "40.50"
+    assert resp.data["tipo_cliente"] == "FRECUENTE"
+
+
+def test_put_incompleto_devuelve_400(api_client, payload_valido):
+    """API-CN-PUT-02: PUT sin los 3 campos obligatorios."""
+    creada = api_client.post(URL_LISTA, payload_valido, format="json").data
+    url = reverse("cotizacion-detail", args=[creada["id"]])
+    resp = api_client.put(url, {"peso_kg": "5.00"}, format="json")
+    assert resp.status_code == 400
+    assert resp.data["codigo"] == "DATOS_INVALIDOS"
+
+
+def test_delete_existente_devuelve_204_y_luego_404(api_client, payload_valido):
+    """API-CN-DEL-01: DELETE existente."""
+    creada = api_client.post(URL_LISTA, payload_valido, format="json").data
+    url = reverse("cotizacion-detail", args=[creada["id"]])
+    assert api_client.delete(url).status_code == 204
+    assert api_client.get(url).status_code == 404
+    assert Cotizacion.objects.filter(pk=creada["id"]).count() == 0
+
+
+def test_delete_inexistente_devuelve_404(api_client):
+    """API-CN-DEL-02: DELETE inexistente."""
+    url = reverse("cotizacion-detail", args=[9999])
+    resp = api_client.delete(url)
+    assert resp.status_code == 404
+    assert resp.data["codigo"] == "NOT_FOUND"
+
+
+def test_delete_lista_sin_id_devuelve_405(api_client):
+    """API-CN-DEL-03: DELETE en la colección (sin id) no permitido."""
+    resp = api_client.delete(URL_LISTA)
+    assert resp.status_code == 405
+    assert resp.data["codigo"] == "METHOD_NOT_ALLOWED"
 
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,1336 @@
+[
+ {
+  "nodeid": "tests/integration/core/test_core.py::test_health_check",
+  "archivo": "tests/integration/core/test_core.py",
+  "nombre": "test_health_check",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.2322269000014785,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/core/test_core.py::test_comando_cargar_datos_demo",
+  "archivo": "tests/integration/core/test_core.py",
+  "nombre": "test_comando_cargar_datos_demo",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.014719500000865082,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_calcular_devuelve_desglose_y_no_guarda",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_calcular_devuelve_desglose_y_no_guarda",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.00524779999977909,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_guarda_en_base_de_datos",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_crear_guarda_en_base_de_datos",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.01718839999921329,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[0.00-400-PESO_INVALIDO]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_crear_rechaza_peso_fuera_de_rango_sin_guardar[0.00-400-PESO_INVALIDO]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004766699999890989,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[-1.00-400-PESO_INVALIDO]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_crear_rechaza_peso_fuera_de_rango_sin_guardar[-1.00-400-PESO_INVALIDO]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.003823900000497815,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[20.01-422-LIMITE_EXCEDIDO]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_crear_rechaza_peso_fuera_de_rango_sin_guardar[20.01-422-LIMITE_EXCEDIDO]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0037878000002820045,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_crear_rechaza_peso_fuera_de_rango_sin_guardar[100.00-422-LIMITE_EXCEDIDO]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_crear_rechaza_peso_fuera_de_rango_sin_guardar[100.00-422-LIMITE_EXCEDIDO]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004174299998339848,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload0-peso_kg]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_validaciones_de_formato[payload0-peso_kg]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0035840000018652063,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload1-peso_kg]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_validaciones_de_formato[payload1-peso_kg]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0036455999997997424,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload2-tipo_cliente]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_validaciones_de_formato[payload2-tipo_cliente]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0034314000004087575,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload3-tipo_envio]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_validaciones_de_formato[payload3-tipo_envio]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0034873999993578764,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload4-peso_kg]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_validaciones_de_formato[payload4-peso_kg]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0032641999969200697,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload5-tipo_cliente]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_validaciones_de_formato[payload5-tipo_cliente]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.003532100001393701,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_validaciones_de_formato[payload6-tipo_envio]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_validaciones_de_formato[payload6-tipo_envio]",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.003785099999731756,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_cotizaciones_paginado_y_ordenado",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_listar_cotizaciones_paginado_y_ordenado",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.009184799999275128,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_con_filtros",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_listar_con_filtros",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.009789099998670281,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_con_filtro_invalido_devuelve_400",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_listar_con_filtro_invalido_devuelve_400",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.003430800003116019,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_listar_respeta_page_size",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_listar_respeta_page_size",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.010883399998419918,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_calcular_no_tiene_id_ni_fecha",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_calcular_no_tiene_id_ni_fecha",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0038621000003331574,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_detalle_de_cotizacion",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_detalle_de_cotizacion",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.007294099999853643,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_detalle_inexistente_devuelve_404_con_formato_estandar",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_detalle_inexistente_devuelve_404_con_formato_estandar",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004012400000647176,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_put_reemplaza_datos_y_recalcula",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_put_reemplaza_datos_y_recalcula",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [
+   "API-CN-PUT-01: PUT con los 3 campos devuelve 200 y desglose recalculado."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.007762300001559197,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_patch_cambia_solo_campos_enviados_y_recalcula",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_patch_cambia_solo_campos_enviados_y_recalcula",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [
+   "API-CN-PATCH-01: PATCH parcial conserva el resto y recalcula."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.007082799998897826,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_put_incompleto_devuelve_400",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_put_incompleto_devuelve_400",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [
+   "API-CN-PUT-02: PUT sin los 3 campos obligatorios."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.00801080000019283,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_delete_existente_devuelve_204_y_luego_404",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_delete_existente_devuelve_204_y_luego_404",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [
+   "API-CN-DEL-01: DELETE existente."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.008652400001665228,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_delete_inexistente_devuelve_404",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_delete_inexistente_devuelve_404",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [
+   "API-CN-DEL-02: DELETE inexistente."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.004309400001147878,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_delete_lista_sin_id_devuelve_405",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_delete_lista_sin_id_devuelve_405",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [
+   "API-CN-DEL-03: DELETE en la colección (sin id) no permitido."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0031261000021913787,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_tarifas_expone_reglas_vigentes",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_tarifas_expone_reglas_vigentes",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0031207000010908814,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_api.py::test_esquema_openapi_disponible",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_api.py",
+  "nombre": "test_esquema_openapi_disponible",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0436117999979615,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_registrar_cotizacion_persiste_desglose_completo",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_registrar_cotizacion_persiste_desglose_completo",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0033834999994724058,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_registrar_cotizacion_invalida_no_deja_registro",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_registrar_cotizacion_invalida_no_deja_registro",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.002708499998334446,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_simular_cotizacion_devuelve_instancia_sin_guardar",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_simular_cotizacion_devuelve_instancia_sin_guardar",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.002538600001571467,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_listar_cotizaciones_con_filtros",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_listar_cotizaciones_con_filtros",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0044149000004836125,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio0]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio0]",
+  "marcadores": [],
+  "docstring": [
+   "Defensa en profundidad: aunque alguien se salte la API, la BD protege."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0023296999988815514,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio1]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio1]",
+  "marcadores": [],
+  "docstring": [
+   "Defensa en profundidad: aunque alguien se salte la API, la BD protege."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.002380099998845253,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio2]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio2]",
+  "marcadores": [],
+  "docstring": [
+   "Defensa en profundidad: aunque alguien se salte la API, la BD protege."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.002312799999344861,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio3]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio3]",
+  "marcadores": [],
+  "docstring": [
+   "Defensa en profundidad: aunque alguien se salte la API, la BD protege."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0024370000028284267,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio4]",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio4]",
+  "marcadores": [],
+  "docstring": [
+   "Defensa en profundidad: aunque alguien se salte la API, la BD protege."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0024396999997406965,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_signal_registra_en_log_al_emitir_cotizacion",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_signal_registra_en_log_al_emitir_cotizacion",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.002803399996992084,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/cotizaciones/test_cotizacion_service.py::test_signal_no_registra_al_actualizar",
+  "archivo": "tests/integration/cotizaciones/test_cotizacion_service.py",
+  "nombre": "test_signal_no_registra_al_actualizar",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.002872900000511436,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-01 peso 0.00 (limite inferior - 1)-0.00-400-PESO_INVALIDO]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-01 peso 0.00 (limite inferior - 1)-0.00-400-PESO_INVALIDO]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.006700699999782955,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-02 peso negativo -0.01--0.01-400-PESO_INVALIDO]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-02 peso negativo -0.01--0.01-400-PESO_INVALIDO]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004492600002777181,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-03 peso con 3 decimales 0.001-0.001-400-DATOS_INVALIDOS]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-03 peso con 3 decimales 0.001-0.001-400-DATOS_INVALIDOS]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004034399999000016,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-04 peso 20.01 (limite superior + 1)-20.01-422-LIMITE_EXCEDIDO]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-04 peso 20.01 (limite superior + 1)-20.01-422-LIMITE_EXCEDIDO]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.00418339999851014,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-05 peso enorme 999999.99-999999.99-422-LIMITE_EXCEDIDO]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-05 peso enorme 999999.99-999999.99-422-LIMITE_EXCEDIDO]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0038894999997864943,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-06 peso con 7 digitos enteros-1000000-400-DATOS_INVALIDOS]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-06 peso con 7 digitos enteros-1000000-400-DATOS_INVALIDOS]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004021900000225287,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-07 peso texto vacio--400-DATOS_INVALIDOS]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-07 peso texto vacio--400-DATOS_INVALIDOS]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0037652999999409076,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-08 peso NaN-NaN-400-DATOS_INVALIDOS]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-08 peso NaN-NaN-400-DATOS_INVALIDOS]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004568300000755698,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_invalido[QA-09 peso booleano-True-400-DATOS_INVALIDOS]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_invalido[QA-09 peso booleano-True-400-DATOS_INVALIDOS]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004474100000152248,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_limites_validos[QA-10 minimo 0.01-0.01-2.00-5.02]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_limites_validos[QA-10 minimo 0.01-0.01-2.00-5.02]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004150599999775295,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_limites_validos[QA-11 limite ligero 5.00-5.00-2.00-15.00]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_limites_validos[QA-11 limite ligero 5.00-5.00-2.00-15.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004129299999476643,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_limites_validos[QA-12 primer valor pesado 5.01-5.01-4.00-25.04]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_limites_validos[QA-12 primer valor pesado 5.01-5.01-4.00-25.04]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004201199999442906,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_peso_limites_validos[QA-13 maximo 20.00-20.00-4.00-85.00]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_peso_limites_validos[QA-13 maximo 20.00-20.00-4.00-85.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004005799999504234,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_tipos_invalidos[QA-14 cliente en minusculas-vip-ESTANDAR-tipo_cliente]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_tipos_invalidos[QA-14 cliente en minusculas-vip-ESTANDAR-tipo_cliente]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0036448000009841053,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_tipos_invalidos[QA-15 cliente vacio--ESTANDAR-tipo_cliente]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_tipos_invalidos[QA-15 cliente vacio--ESTANDAR-tipo_cliente]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004971399999703863,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_tipos_invalidos[QA-16 envio en minusculas-VIP-express-tipo_envio]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_tipos_invalidos[QA-16 envio en minusculas-VIP-express-tipo_envio]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0038085000014689285,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_api_tipos_invalidos[QA-17 envio inexistente-VIP-AEREO-tipo_envio]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_api_tipos_invalidos[QA-17 envio inexistente-VIP-AEREO-tipo_envio]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0034621000013430603,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_24_campos_calculados_enviados_por_cliente_se_ignoran",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_24_campos_calculados_enviados_por_cliente_se_ignoran",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.004921400000966969,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_25_patch_recalcula_solo_lo_enviado",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_25_patch_recalcula_solo_lo_enviado",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.00839309999901161,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_26_patch_con_peso_excedido_no_modifica_registro",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_26_patch_con_peso_excedido_no_modifica_registro",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.010982800000419957,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_27_put_sin_todos_los_campos_es_rechazado",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_27_put_sin_todos_los_campos_es_rechazado",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.006320700000287616,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_28_json_mal_formado",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_28_json_mal_formado",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0033216000028915005,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_29_delete_de_inexistente_es_404",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_29_delete_de_inexistente_es_404",
+  "marcadores": [
+   "api"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.003808500003287918,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/core/test_core.py::test_permission_denied_de_django_sale_con_formato_estandar",
+  "archivo": "tests/integration/core/test_core.py",
+  "nombre": "test_permission_denied_de_django_sale_con_formato_estandar",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0022090000020398293,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/core/test_core.py::test_error_inesperado_no_se_oculta",
+  "archivo": "tests/integration/core/test_core.py",
+  "nombre": "test_error_inesperado_no_se_oculta",
+  "marcadores": [],
+  "docstring": [
+   "Un error de programación debe llegar como 500, no se 'traga'."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.002130400001988164,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/integration/core/test_core.py::test_admin_de_cotizaciones_es_solo_lectura",
+  "archivo": "tests/integration/core/test_core.py",
+  "nombre": "test_admin_de_cotizaciones_es_solo_lectura",
+  "marcadores": [],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.002818200000547222,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_tabla_decision_en_limite_5_01[QA-18-NUEVO-ESTANDAR-0.00-0.00-25.04]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_tabla_decision_en_limite_5_01[QA-18-NUEVO-ESTANDAR-0.00-0.00-25.04]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0023939999991853256,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_tabla_decision_en_limite_5_01[QA-19-NUEVO-EXPRESS-0.00-6.26-31.30]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_tabla_decision_en_limite_5_01[QA-19-NUEVO-EXPRESS-0.00-6.26-31.30]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0017596999987290474,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_tabla_decision_en_limite_5_01[QA-20-FRECUENTE-ESTANDAR-2.50-0.00-22.54]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_tabla_decision_en_limite_5_01[QA-20-FRECUENTE-ESTANDAR-2.50-0.00-22.54]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0017430999978387263,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_tabla_decision_en_limite_5_01[QA-21-FRECUENTE-EXPRESS-2.50-6.26-28.80]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_tabla_decision_en_limite_5_01[QA-21-FRECUENTE-EXPRESS-2.50-6.26-28.80]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0017339999994874233,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_tabla_decision_en_limite_5_01[QA-22-VIP-ESTANDAR-5.01-0.00-20.03]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_tabla_decision_en_limite_5_01[QA-22-VIP-ESTANDAR-5.01-0.00-20.03]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0017263999998249346,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_tabla_decision_en_limite_5_01[QA-23-VIP-EXPRESS-5.01-6.26-26.29]",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_tabla_decision_en_limite_5_01[QA-23-VIP-EXPRESS-5.01-6.26-26.29]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0017395999984728405,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_30_core_rechaza_peso_menor_al_minimo",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_30_core_rechaza_peso_menor_al_minimo",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [],
+  "resultado": "xfail",
+  "duracion": 0.0017849999985628529,
+  "mensaje": "DEF-001: calcular_cotizacion no aplica el minimo de 0.01 kg (PESO_MINIMO_KG no se usa)"
+ },
+ {
+  "nodeid": "tests/qa/test_qa_exploratorias.py::test_QA_31_core_rechaza_nan_con_error_de_negocio",
+  "archivo": "tests/qa/test_qa_exploratorias.py",
+  "nombre": "test_QA_31_core_rechaza_nan_con_error_de_negocio",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [],
+  "resultado": "xfail",
+  "duracion": 0.001527999998870655,
+  "mensaje": "DEF-002: con peso 'NaN' el core lanza decimal.InvalidOperation en vez de PesoInvalidoError"
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C1_peso_cero_o_negativo_es_rechazado",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C1_peso_cero_o_negativo_es_rechazado",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C1: N1 -> N2 -> FIN  (D1 verdadero)"
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0023733000034553697,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C2_peso_mayor_a_20_es_rechazado",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C2_peso_mayor_a_20_es_rechazado",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C2: N1 -> N3 -> N4 -> FIN  (D2 verdadero)"
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.001343699997960357,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C3_camino_base_ligero_nuevo_estandar",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C3_camino_base_ligero_nuevo_estandar",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C3: N1-N3-N5-N6-N8-N9-N15-N16-N20-N21  (camino base)"
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0012878000015916768,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C4_tramo_pesado",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C4_tramo_pesado",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C4: ...N5 -> N7 (D3 falso)..."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.001319599999987986,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C5_cliente_frecuente",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C5_cliente_frecuente",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C5: ...N8 -> N10 -> N11 (D4 falso, D5 verdadero)..."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0012867000004916918,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C6_cliente_vip",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C6_cliente_vip",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C6: ...N10 -> N12 -> N13 (D5 falso, D6 verdadero)..."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0012989000006200513,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C7_tipo_cliente_invalido",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C7_tipo_cliente_invalido",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C7: ...N12 -> N14 -> FIN (D6 falso)"
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0012917000003653811,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C8_envio_express",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C8_envio_express",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C8: ...N15 -> N17 -> N18 -> N20 (D7 falso, D8 verdadero)"
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0013111000007484108,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py::test_C9_tipo_envio_invalido",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_blanca.py",
+  "nombre": "test_C9_tipo_envio_invalido",
+  "marcadores": [
+   "caja_blanca"
+  ],
+  "docstring": [
+   "C9: ...N17 -> N19 -> FIN (D8 falso)"
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0013989999988552881,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_validas_peso[PE-02 tramo ligero (0.01-5.00)-3.00-11.00]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_particiones_validas_peso[PE-02 tramo ligero (0.01-5.00)-3.00-11.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015351000001828652,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_validas_peso[PE-03 tramo pesado (5.01-20.00)-12.00-53.00]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_particiones_validas_peso[PE-03 tramo pesado (5.01-20.00)-12.00-53.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015005999975983286,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_invalidas_peso[PE-01 peso negativo--3.00-PesoInvalidoError]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_particiones_invalidas_peso[PE-01 peso negativo--3.00-PesoInvalidoError]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015194000025076093,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_particiones_invalidas_peso[PE-04 peso mayor a 20-35.00-LimiteExcedidoError]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_particiones_invalidas_peso[PE-04 peso mayor a 20-35.00-LimiteExcedidoError]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015082999980222667,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-02 minimo-0.01-2.00-5.02]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-02 minimo-0.01-2.00-5.02]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.00155550000272342,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-03 minimo+-0.02-2.00-5.04]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-03 minimo+-0.02-2.00-5.04]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015691999997216044,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-04 limite ligero--4.99-2.00-14.98]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-04 limite ligero--4.99-2.00-14.98]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.001747200001773308,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-05 limite ligero-5.00-2.00-15.00]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-05 limite ligero-5.00-2.00-15.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0016540999986318639,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-06 limite pesado-5.01-4.00-25.04]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-06 limite pesado-5.01-4.00-25.04]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.001582699998834869,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-07 limite pesado+-5.02-4.00-25.08]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-07 limite pesado+-5.02-4.00-25.08]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015600000006088521,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-08 maximo--19.99-4.00-84.96]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-08 maximo--19.99-4.00-84.96]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015542999990429962,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_peso_valido[BVA-09 maximo-20.00-4.00-85.00]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_peso_valido[BVA-09 maximo-20.00-4.00-85.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0015517999981966568,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_01_peso_cero_invalido",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_01_peso_cero_invalido",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0012788000003638444,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_bva_10_peso_justo_sobre_el_maximo_rechazado",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_bva_10_peso_justo_sobre_el_maximo_rechazado",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.001306199997998192,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_monto_minimo_posible",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_monto_minimo_posible",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [
+   "BVA-M1: menor peso + mayor descuento + sin recargo."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.001477800000429852,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_monto_maximo_posible",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_monto_maximo_posible",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [
+   "BVA-M2: mayor peso + sin descuento + con recargo."
+  ],
+  "resultado": "aprobada",
+  "duracion": 0.0013413000015134457,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_monto_nunca_es_negativo_ni_cero",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_monto_nunca_es_negativo_ni_cero",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0014209000000846572,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-01-NUEVO-ESTANDAR-0.00-0.00-45.00]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_tabla_decision[TD-01-NUEVO-ESTANDAR-0.00-0.00-45.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.001784000001862296,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-02-NUEVO-EXPRESS-0.00-11.25-56.25]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_tabla_decision[TD-02-NUEVO-EXPRESS-0.00-11.25-56.25]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.001683399998000823,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-03-FRECUENTE-ESTANDAR-4.50-0.00-40.50]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_tabla_decision[TD-03-FRECUENTE-ESTANDAR-4.50-0.00-40.50]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0016985999991447898,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-04-FRECUENTE-EXPRESS-4.50-11.25-51.75]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_tabla_decision[TD-04-FRECUENTE-EXPRESS-4.50-11.25-51.75]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.001694799997494556,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-05-VIP-ESTANDAR-9.00-0.00-36.00]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_tabla_decision[TD-05-VIP-ESTANDAR-9.00-0.00-36.00]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0017025000015564729,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_tabla_decision[TD-06-VIP-EXPRESS-9.00-11.25-47.25]",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_tabla_decision[TD-06-VIP-EXPRESS-9.00-11.25-47.25]",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0025932999978977023,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_redondeo_half_up",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_redondeo_half_up",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0018023999964498216,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_redondeo_en_descuento_con_tres_decimales",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_redondeo_en_descuento_con_tres_decimales",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0013896000000386266,
+  "mensaje": ""
+ },
+ {
+  "nodeid": "tests/unit/cotizaciones/test_calculadora_caja_negra.py::test_acepta_peso_como_string_o_entero",
+  "archivo": "tests/unit/cotizaciones/test_calculadora_caja_negra.py",
+  "nombre": "test_acepta_peso_como_string_o_entero",
+  "marcadores": [
+   "caja_negra"
+  ],
+  "docstring": [],
+  "resultado": "aprobada",
+  "duracion": 0.0018653999995876802,
+  "mensaje": ""
+ }
+]

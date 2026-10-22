@@ -1,0 +1,150 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.7.0
+django: version: 5.2.18, settings: config.settings.testing (from ini)
+rootdir: C:\Users\danna\Videos\pruebas-cajabw\fastexpress-backend
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, django-4.14.0
+collected 79 items
+
+<Dir fastexpress-backend>
+  <Package tests>
+    <Package integration>
+      <Package core>
+        <Module test_core.py>
+          <Function test_health_check>
+          <Function test_comando_cargar_datos_demo>
+      <Package cotizaciones>
+        <Module test_cotizacion_api.py>
+          <Function test_calcular_devuelve_desglose_y_no_guarda>
+          <Function test_crear_guarda_en_base_de_datos>
+          <Function test_crear_rechaza_peso_fuera_de_rango_sin_guardar[0.00-400-PESO_INVALIDO]>
+          <Function test_crear_rechaza_peso_fuera_de_rango_sin_guardar[-1.00-400-PESO_INVALIDO]>
+          <Function test_crear_rechaza_peso_fuera_de_rango_sin_guardar[20.01-422-LIMITE_EXCEDIDO]>
+          <Function test_crear_rechaza_peso_fuera_de_rango_sin_guardar[100.00-422-LIMITE_EXCEDIDO]>
+          <Function test_validaciones_de_formato[payload0-peso_kg]>
+          <Function test_validaciones_de_formato[payload1-peso_kg]>
+          <Function test_validaciones_de_formato[payload2-tipo_cliente]>
+          <Function test_validaciones_de_formato[payload3-tipo_envio]>
+          <Function test_validaciones_de_formato[payload4-peso_kg]>
+          <Function test_validaciones_de_formato[payload5-tipo_cliente]>
+          <Function test_validaciones_de_formato[payload6-tipo_envio]>
+          <Function test_listar_cotizaciones_paginado_y_ordenado>
+          <Function test_listar_con_filtros>
+          <Function test_listar_con_filtro_invalido_devuelve_400>
+          <Function test_listar_respeta_page_size>
+          <Function test_calcular_no_tiene_id_ni_fecha>
+          <Function test_detalle_de_cotizacion>
+          <Function test_detalle_inexistente_devuelve_404_con_formato_estandar>
+          <Function test_put_reemplaza_datos_y_recalcula>
+          <Function test_patch_cambia_solo_campos_enviados_y_recalcula>
+          <Function test_put_incompleto_devuelve_400>
+          <Function test_delete_existente_devuelve_204_y_luego_404>
+          <Function test_delete_inexistente_devuelve_404>
+          <Function test_delete_lista_sin_id_devuelve_405>
+          <Function test_tarifas_expone_reglas_vigentes>
+          <Function test_esquema_openapi_disponible>
+        <Module test_cotizacion_service.py>
+          <Function test_registrar_cotizacion_persiste_desglose_completo>
+          <Function test_registrar_cotizacion_invalida_no_deja_registro>
+          <Function test_simular_cotizacion_devuelve_instancia_sin_guardar>
+          <Function test_listar_cotizaciones_con_filtros>
+          <Function test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio0]>
+          <Function test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio1]>
+          <Function test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio2]>
+          <Function test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio3]>
+          <Function test_base_de_datos_rechaza_datos_fuera_de_reglas[cambio4]>
+          <Function test_signal_registra_en_log_al_emitir_cotizacion>
+          <Function test_signal_no_registra_al_actualizar>
+      <Package core>
+        <Module test_core.py>
+          <Function test_permission_denied_de_django_sale_con_formato_estandar>
+          <Function test_error_inesperado_no_se_oculta>
+          <Function test_admin_de_cotizaciones_es_solo_lectura>
+    <Package unit>
+      <Package cotizaciones>
+        <Module test_calculadora_caja_blanca.py>
+          <Function test_C1_peso_cero_o_negativo_es_rechazado>
+          <Function test_C2_peso_mayor_a_20_es_rechazado>
+          <Function test_C3_camino_base_ligero_nuevo_estandar>
+          <Function test_C4_tramo_pesado>
+          <Function test_C5_cliente_frecuente>
+          <Function test_C6_cliente_vip>
+          <Function test_C7_tipo_cliente_invalido>
+          <Function test_C8_envio_express>
+          <Function test_C9_tipo_envio_invalido>
+        <Module test_calculadora_caja_negra.py>
+          <Function test_particiones_validas_peso[PE-02 tramo ligero (0.01-5.00)-3.00-11.00]>
+          <Function test_particiones_validas_peso[PE-03 tramo pesado (5.01-20.00)-12.00-53.00]>
+          <Function test_particiones_invalidas_peso[PE-01 peso negativo--3.00-PesoInvalidoError]>
+          <Function test_particiones_invalidas_peso[PE-04 peso mayor a 20-35.00-LimiteExcedidoError]>
+          <Function test_bva_peso_valido[BVA-02 minimo-0.01-2.00-5.02]>
+          <Function test_bva_peso_valido[BVA-03 minimo+-0.02-2.00-5.04]>
+          <Function test_bva_peso_valido[BVA-04 limite ligero--4.99-2.00-14.98]>
+          <Function test_bva_peso_valido[BVA-05 limite ligero-5.00-2.00-15.00]>
+          <Function test_bva_peso_valido[BVA-06 limite pesado-5.01-4.00-25.04]>
+          <Function test_bva_peso_valido[BVA-07 limite pesado+-5.02-4.00-25.08]>
+          <Function test_bva_peso_valido[BVA-08 maximo--19.99-4.00-84.96]>
+          <Function test_bva_peso_valido[BVA-09 maximo-20.00-4.00-85.00]>
+          <Function test_bva_01_peso_cero_invalido>
+          <Function test_bva_10_peso_justo_sobre_el_maximo_rechazado>
+          <Function test_monto_minimo_posible>
+          <Function test_monto_maximo_posible>
+          <Function test_monto_nunca_es_negativo_ni_cero>
+          <Function test_tabla_decision[TD-01-NUEVO-ESTANDAR-0.00-0.00-45.00]>
+          <Function test_tabla_decision[TD-02-NUEVO-EXPRESS-0.00-11.25-56.25]>
+          <Function test_tabla_decision[TD-03-FRECUENTE-ESTANDAR-4.50-0.00-40.50]>
+          <Function test_tabla_decision[TD-04-FRECUENTE-EXPRESS-4.50-11.25-51.75]>
+          <Function test_tabla_decision[TD-05-VIP-ESTANDAR-9.00-0.00-36.00]>
+          <Function test_tabla_decision[TD-06-VIP-EXPRESS-9.00-11.25-47.25]>
+          <Function test_redondeo_half_up>
+          <Function test_redondeo_en_descuento_con_tres_decimales>
+          <Function test_acepta_peso_como_string_o_entero>
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.10.11-final-0 _______________
+
+Name                                                                   Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------------------------------------
+principal\__init__.py                                                      0      0      0      0   100%
+principal\admin\__init__.py                                                1      0      0      0   100%
+principal\admin\cotizacion_admin.py                                       11      2      0      0    82%   17, 20
+principal\apps.py                                                          7      0      0      0   100%
+principal\constantes\__init__.py                                           0      0      0      0   100%
+principal\constantes\cotizacion.py                                        21      0      0      0   100%
+principal\core\__init__.py                                                 0      0      0      0   100%
+principal\core\exceptions\__init__.py                                      0      0      0      0   100%
+principal\core\exceptions\base.py                                          6      2      0      0    67%   15-16
+principal\core\exceptions\handler.py                                      26     17     10      0    25%   24-46
+principal\core\pagination.py                                               5      0      0      0   100%
+principal\core\serializers.py                                              4      0      0      0   100%
+principal\core\views.py                                                   10      3      0      0    70%   19-21
+principal\management\__init__.py                                           0      0      0      0   100%
+principal\management\commands\__init__.py                                  0      0      0      0   100%
+principal\management\commands\cargar_datos_demo.py                        17     17      4      0     0%   12-49
+principal\modelos\__init__.py                                              2      0      0      0   100%
+principal\modelos\base.py                                                  6      0      0      0   100%
+principal\modelos\cotizacion.py                                           26      1      0      0    96%   62
+principal\models.py                                                        1      0      0      0   100%
+principal\modulos\__init__.py                                              0      0      0      0   100%
+principal\modulos\cotizaciones\__init__.py                                 0      0      0      0   100%
+principal\modulos\cotizaciones\exceptions.py                              13      0      0      0   100%
+principal\modulos\cotizaciones\serializers\__init__.py                     0      0      0      0   100%
+principal\modulos\cotizaciones\serializers\cotizacion_serializers.py      15      0      0      0   100%
+principal\modulos\cotizaciones\services\__init__.py                        0      0      0      0   100%
+principal\modulos\cotizaciones\services\calculadora_service.py            32     27     16      0    10%   45, 57-102
+principal\modulos\cotizaciones\services\cotizacion_service.py             23     13      6      0    34%   27, 33, 43-46, 51, 56-61
+principal\modulos\cotizaciones\services\tarifa_service.py                  3      1      0      0    67%   7
+principal\modulos\cotizaciones\signals\__init__.py                         0      0      0      0   100%
+principal\modulos\cotizaciones\signals\cotizacion_signals.py               9      2      2      0    64%   20-21
+principal\modulos\cotizaciones\urls.py                                     7      0      0      0   100%
+principal\modulos\cotizaciones\views\__init__.py                           0      0      0      0   100%
+principal\modulos\cotizaciones\views\cotizacion_views.py                  52     25      2      0    50%   63-65, 68-70, 74, 81, 89-97, 106-125, 133-134, 143-151
+principal\modulos\cotizaciones\views\tarifa_views.py                       8      1      0      0    88%   13
+principal\urls.py                                                          3      0      0      0   100%
+------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                    308    111     40      0    57%
+Coverage HTML written to dir htmlcov
+Coverage XML written to file coverage.xml
+FAIL Required test coverage of 85.0% not reached. Total coverage: 56.61%
+========================= 79 tests collected in 0.79s =========================

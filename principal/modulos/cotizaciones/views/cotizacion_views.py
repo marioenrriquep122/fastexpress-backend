@@ -43,7 +43,7 @@ class CotizacionViewSet(
     """
     CRUD de cotizaciones (base: /api/v1/cotizaciones/).
 
-    - GET    /                lista paginada (filtros: ?tipo_cliente=VIP&tipo_envio=EXPRESS)
+    - GET    /                lista paginada (?page=&page_size=&id=&peso_kg=&creado_en=&tipo_cliente=&tipo_envio=)
     - GET    /{id}/           detalle
     - POST   /                calcula y GUARDA
     - PUT    /{id}/           reemplaza los 3 datos de entrada y RECALCULA
@@ -67,7 +67,14 @@ class CotizacionViewSet(
     def get_queryset(self):
         filtros = CotizacionFiltroSerializer(data=self.request.query_params)
         filtros.is_valid(raise_exception=True)
-        return cotizacion_service.listar_cotizaciones(**filtros.validated_data)
+        data = filtros.validated_data
+        return cotizacion_service.listar_cotizaciones(
+            pk=data.get("id"),
+            peso_kg=data.get("peso_kg"),
+            creado_en=data.get("creado_en"),
+            tipo_cliente=data.get("tipo_cliente"),
+            tipo_envio=data.get("tipo_envio"),
+        )
 
     @extend_schema(summary="Listar cotizaciones", parameters=[CotizacionFiltroSerializer])
     def list(self, request, *args, **kwargs):

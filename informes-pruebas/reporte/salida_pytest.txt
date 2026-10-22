@@ -1,0 +1,68 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.7.0
+django: version: 5.2.18, settings: config.settings.testing (from ini)
+rootdir: C:\Users\danna\Videos\pruebas-cajabw\fastexpress-backend
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, django-4.14.0
+collected 110 items
+
+tests\integration\core\test_core.py ..                                   [  1%]
+tests\integration\cotizaciones\test_cotizacion_api.py .................. [ 18%]
+..........                                                               [ 27%]
+tests\integration\cotizaciones\test_cotizacion_service.py ...........    [ 37%]
+tests\qa\test_qa_exploratorias.py .......................                [ 58%]
+tests\integration\core\test_core.py ...                                  [ 60%]
+tests\qa\test_qa_exploratorias.py ......xx                               [ 68%]
+tests\unit\cotizaciones\test_calculadora_caja_blanca.py .........        [ 76%]
+tests\unit\cotizaciones\test_calculadora_caja_negra.py ................. [ 91%]
+.........                                                                [100%]
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.10.11-final-0 _______________
+
+Name                                                                   Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------------------------------------
+principal\__init__.py                                                      0      0      0      0   100%
+principal\admin\__init__.py                                                1      0      0      0   100%
+principal\admin\cotizacion_admin.py                                       11      0      0      0   100%
+principal\apps.py                                                          7      0      0      0   100%
+principal\constantes\__init__.py                                           0      0      0      0   100%
+principal\constantes\cotizacion.py                                        21      0      0      0   100%
+principal\core\__init__.py                                                 0      0      0      0   100%
+principal\core\exceptions\__init__.py                                      0      0      0      0   100%
+principal\core\exceptions\base.py                                          6      0      0      0   100%
+principal\core\exceptions\handler.py                                      26      0     10      0   100%
+principal\core\pagination.py                                               5      0      0      0   100%
+principal\core\serializers.py                                              4      0      0      0   100%
+principal\core\views.py                                                   10      0      0      0   100%
+principal\management\__init__.py                                           0      0      0      0   100%
+principal\management\commands\__init__.py                                  0      0      0      0   100%
+principal\management\commands\cargar_datos_demo.py                        17      0      4      0   100%
+principal\modelos\__init__.py                                              2      0      0      0   100%
+principal\modelos\base.py                                                  6      0      0      0   100%
+principal\modelos\cotizacion.py                                           26      0      0      0   100%
+principal\models.py                                                        1      0      0      0   100%
+principal\modulos\__init__.py                                              0      0      0      0   100%
+principal\modulos\cotizaciones\__init__.py                                 0      0      0      0   100%
+principal\modulos\cotizaciones\exceptions.py                              13      0      0      0   100%
+principal\modulos\cotizaciones\serializers\__init__.py                     0      0      0      0   100%
+principal\modulos\cotizaciones\serializers\cotizacion_serializers.py      15      0      0      0   100%
+principal\modulos\cotizaciones\services\__init__.py                        0      0      0      0   100%
+principal\modulos\cotizaciones\services\calculadora_service.py            32      0     16      0   100%
+principal\modulos\cotizaciones\services\cotizacion_service.py             23      0      6      0   100%
+principal\modulos\cotizaciones\services\tarifa_service.py                  3      0      0      0   100%
+principal\modulos\cotizaciones\signals\__init__.py                         0      0      0      0   100%
+principal\modulos\cotizaciones\signals\cotizacion_signals.py               9      0      2      0   100%
+principal\modulos\cotizaciones\urls.py                                     7      0      0      0   100%
+principal\modulos\cotizaciones\views\__init__.py                           0      0      0      0   100%
+principal\modulos\cotizaciones\views\cotizacion_views.py                  52      0      2      0   100%
+principal\modulos\cotizaciones\views\tarifa_views.py                       8      0      0      0   100%
+principal\urls.py                                                          3      0      0      0   100%
+------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                    308      0     40      0   100%
+Coverage HTML written to dir htmlcov
+Coverage XML written to file coverage.xml
+Coverage JSON written to file C:\Users\danna\Videos\pruebas-cajabw\fastexpress-backend\informes-pruebas\reporte\coverage.json
+Required test coverage of 85.0% reached. Total coverage: 100.00%
+======================= 108 passed, 2 xfailed in 1.55s ========================

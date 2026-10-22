@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.7.0
+django: version: 5.2.18, settings: config.settings.testing (from ini)
+rootdir: C:\Users\danna\Videos\pruebas-cajabw\fastexpress-backend
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, django-4.14.0
+collected 79 items / 25 deselected / 54 selected
+
+tests\integration\cotizaciones\test_cotizacion_api.py .................. [ 33%]
+..........                                                               [ 51%]
+tests\unit\cotizaciones\test_calculadora_caja_negra.py ................. [ 83%]
+.........                                                                [100%]
+
+====================== 54 passed, 25 deselected in 0.76s ======================
